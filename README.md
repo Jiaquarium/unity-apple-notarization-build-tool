@@ -1,4 +1,5 @@
-# Unity Mac Notarization Build Tool
+# Unity Apple Notarization Build Tool
+As of January 2020, all macOS Catalina+ apps are required to be notarized, meaning Unity builds now need to be notarized to distribute them on Mac (e.g. if sending the game directly to peeps). This helps automate those tasks.
 
 ## Building & Notarizing with Makefile
 You first need to build your app with the proper information and send to Apple's notary servers.

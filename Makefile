@@ -1,6 +1,6 @@
 BIN 				:= $(shell pwd)
 APP 				?= unity-sample-game
-ENTITLEMENT 		?= unity-sample-game.entitlements
+ENTITLEMENT			?= unity-sample-game.entitlements
 DEV_ID				?= "Developer ID Application: Donkey Kong (ABC1234567)"
 APPLE_ID			?= donkey.kong@icloud.com
 GEN_PW				?= abcd-efgh-ijkl-mnop
