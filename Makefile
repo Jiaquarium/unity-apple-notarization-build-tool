@@ -1,11 +1,11 @@
-BIN 				:= $(shell pwd)
-APP 				?= unity-sample-game
-ENTITLEMENT			?= unity-sample-game.entitlements
-DEV_ID				?= "Developer ID Application: Donkey Kong (ABC1234567)"
-APPLE_ID			?= donkey.kong@icloud.com
-GEN_PW				?= abcd-efgh-ijkl-mnop
-TEAM_ID				?= ABC1234567
-UNITY_BUNDLE_ID		?= com.company.unity-sample-game
+BIN                 := $(shell pwd)
+APPLE_ID            ?= unity-sample-game
+entitlements        ?= unity-sample-game.entitlements
+DEV_ID              ?= "Developer ID Application: Donkey Kong (ABC1234567)"
+APPLE_ID            ?= donkey.kong@icloud.com
+GEN_PW              ?= abcd-efgh-ijkl-mnop
+TEAM_ID             ?= ABC1234567
+UNITY_BUNDLE_ID     ?= com.company.unity-sample-game
 
 build:
 	echo 'Change permissions in app 🔪'
