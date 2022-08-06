@@ -1,5 +1,4 @@
 BIN                 := $(shell pwd)
-APPLE_ID            ?= unity-sample-game
 entitlements        ?= unity-sample-game.entitlements
 DEV_ID              ?= "Developer ID Application: Bowser (ABC1234567)"
 APPLE_ID            ?= bowser@icloud.com
