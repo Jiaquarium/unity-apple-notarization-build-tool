@@ -16,10 +16,11 @@ zip:
 	ditto -c -k --sequesterRsrc --keepParent $(APP).app $(APP).zip
 
 upload:
-	xcrun altool --notarize-app --username $(APPLE_ID) --password $(GEN_PW) --asc-provider $(TEAM_ID) --primary-bundle-id $(UNITY_BUNDLE_ID) --file $(APP).zip --verbose
+	xcrun notarytool submit --apple-id $(APPLE_ID) --team-id $(TEAM_ID) --password $(GEN_PW) $(APP).zip --wait
 
+# must pass in SUB_ID (i.e. make SUB_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
 ping:
-	xcrun altool --notarization-info $(REQUEST_UUID) --username $(APPLE_ID) --password $(GEN_PW) --asc-provider $(TEAM_ID)	
+	xcrun notarytool info --apple-id $(APPLE_ID) --team-id $(TEAM_ID) --password $(GEN_PW) $(SUB_ID)
 
 staple:
 	xcrun stapler staple $(APP).app
