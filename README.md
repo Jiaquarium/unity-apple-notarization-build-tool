@@ -15,7 +15,7 @@ make zip
 make upload
 
 // Check on status of upload
-make ping
+make ping SUB_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 // Staple after upload status "Package Approved"
 make staple
